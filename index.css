@@ -1,0 +1,6 @@
+#mousezone {
+    width: 1000px;
+    height: 1000px;
+    border: 1px solid grey;
+    cursor: url("cur1.gif"), auto;
+}
