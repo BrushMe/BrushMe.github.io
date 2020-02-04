@@ -1,34 +1,8 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <title></title>
-  <link rel="stylesheet" type="text/css" href="styles/style.css">
-</head>
-<body>
-<div class = "alertBox">
-    <h3 id="alertText" align="center">조작법: 방향키</h3>
-  </div>
-
-  <div class = "pannel">
-
-    <div class="house" id="house1" style="left : 200px;top: 200px;" name="히워니">
-      <div class="roof" style="background: indianred"></div>
-      <div class="wall" style="background: lightseagreen"></div>
-      <div class="door" style="background: saddlebrown"></div>
-    </div>
-
-    <div class="house" id="house2" style="left : 500px;top: 200px;" name="이유">
-      <div class="roof" style="background: dodgerblue"></div>
-      <div class="wall" style="background: darkslateblue"></div>
-      <div class="door" style="background: steelblue"></div>
-    </div>
-
-
-    <div class="object" id="movingObject" style="left : 50px;top: 180px;"></div>
-
-  </div>
-<script src="scripts/solmi.js"></script>
-</body>
-</html>
+---
+layout: default
+---
+<ul>
+	{% for post in site.posts %}
+	<li><a href="{{  post.url }}" title="{{ post.title }}"><img src="/assets/img/file.ico" title="{{ post.title }}" />{{ post.title }}</a></li>
+	{% endfor %}
+</ul>
